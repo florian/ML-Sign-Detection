@@ -1,0 +1,2 @@
+my_image_transport
+-DCATKIN_WHITHELIST_PACKAGES=my_image_transport -DCATKIN_DEVEL_PREFIX=/home/dorian/test/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/dorian/test/catkin_ws/install -G Unix Makefiles
