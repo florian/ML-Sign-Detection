@@ -1,0 +1,2 @@
+cameraFrames
+-DCATKIN_WHITHELIST_PACKAGES=cameraFrames -DCATKIN_DEVEL_PREFIX=/home/dorian/test_ws/devel -DCMAKE_INSTALL_PREFIX=/home/dorian/test_ws/install -G Unix Makefiles
