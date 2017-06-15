@@ -1,3 +1,4 @@
+#include<sstream>
 #include<ros/ros.h>
 #include<image_transport/image_transport.h>
 #include<opencv2/highgui/highgui.hpp>
@@ -5,6 +6,13 @@
 
 using namespace std;
 using namespace cv;
+
+string IntToString(int a)
+{
+ostringstream temp;
+temp<<a;
+return temp.str();
+}
 
 void imageCallback(const sensor_msgs::ImageConstPtr& msg)
 {
@@ -14,6 +22,8 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
    cv_ptr = cv_bridge::toCvCopy(msg,sensor_msgs::image_encodings::BGR8);
    // cv::imshow("view",cv_bridge::toCvShare(msg,"bgr8")->image);   
    // cv::imshow("view",cv_ptr->image);
+   //cv::imshow("view",cv_ptr->image);
+  // cv::imwrite("view.jpg",cv_ptr->image);
   }
 
   catch(cv_bridge::Exception& e)
@@ -24,16 +34,21 @@ void imageCallback(const sensor_msgs::ImageConstPtr& msg)
   int windows_n_rows = 200;
   int windows_n_cols = 200;
   int step = 100; 
-
+  
+  std::string filename;
+  int i = 0;
   for(int row = 0; row <= cv_ptr->image.rows - windows_n_rows; row += step){
      for(int col = 0; col <= cv_ptr->image.cols - windows_n_cols; col += step){
      //there could be feature evaluator over windows
-
+		 
      //resulting window
-     cv::Rect windows(col, row, windows_n_rows, windows_n_cols);
-     cv::rectangle(cv_ptr->image,windows, Scalar(255),1,8,0);
-     
-     cv::imshow("view",cv_ptr->image);
+	cv::Rect windows(col, row, windows_n_rows, windows_n_cols);
+	cv::rectangle(cv_ptr->image,windows, Scalar(255),1,8,0);
+	std::string num;
+	num = IntToString(i);
+	filename = "frame" + num  + ".jpg"; 
+        cv::imwrite(filename,cv_ptr->image);
+	i += 1;
      }
 
 
@@ -45,11 +60,11 @@ int main(int argc, char **argv)
 {
   ros::init(argc, argv, "image_listener");
   ros::NodeHandle nh;
-  cv::namedWindow("view");
-  cv::startWindowThread();
+ // cv::namedWindow("view");
+ // cv::startWindowThread();
   
   image_transport::ImageTransport it(nh);
-  image_transport::Subscriber sub = it.subscribe("camera/image/compressed",1,imageCallback);
+  image_transport::Subscriber sub = it.subscribe("app/camera/rgb/image_raw",1,imageCallback);
   ros::spin();
-  cv::destroyWindow("view");
+ // cv::destroyWindow("view");
 }
