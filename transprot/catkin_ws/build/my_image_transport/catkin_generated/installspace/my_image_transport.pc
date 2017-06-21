@@ -1,8 +1,0 @@
-prefix=/home/dorian/transprot/catkin_ws/install
-
-Name: my_image_transport
-Description: Description of my_image_transport
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/dorian/transprot/catkin_ws/install/lib 
-Requires: 
