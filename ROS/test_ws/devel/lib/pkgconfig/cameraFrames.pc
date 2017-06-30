@@ -1,0 +1,8 @@
+prefix=/home/dorian/test_ws/devel
+
+Name: cameraFrames
+Description: Description of cameraFrames
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/dorian/test_ws/devel/lib 
+Requires: 

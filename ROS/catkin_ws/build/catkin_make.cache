@@ -1,0 +1,2 @@
+preprocess
+-DCATKIN_WHITHELIST_PACKAGES=preprocess -DCATKIN_DEVEL_PREFIX=/home/dorian/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/dorian/catkin_ws/install -G Unix Makefiles

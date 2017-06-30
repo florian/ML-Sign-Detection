@@ -1,0 +1,8 @@
+prefix=/home/dorian/catkin_ws/devel
+
+Name: preprocess
+Description: Description of preprocess
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/dorian/catkin_ws/devel/lib 
+Requires: 
