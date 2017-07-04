@@ -1,0 +1,2 @@
+preprocess
+-DCATKIN_DEVEL_PREFIX=/home/dorian/basic_ws/devel -DCMAKE_INSTALL_PREFIX=/home/dorian/basic_ws/install -G Unix Makefiles
