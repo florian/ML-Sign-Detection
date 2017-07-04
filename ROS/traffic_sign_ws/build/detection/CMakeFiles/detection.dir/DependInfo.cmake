@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dorian/traffic_sign_ws/src/detection/src/detection.cpp" "/home/dorian/traffic_sign_ws/build/detection/CMakeFiles/detection.dir/src/detection.cpp.o"
+  "/root/traffic_sign_ws/src/detection/src/detection.cpp" "/root/traffic_sign_ws/build/detection/CMakeFiles/detection.dir/src/detection.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,15 +17,16 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/dorian/traffic_sign_ws/build/detection/dlib_build/CMakeFiles/dlib.dir/DependInfo.cmake"
+  "/root/traffic_sign_ws/build/detection/dlib_build/CMakeFiles/dlib.dir/DependInfo.cmake"
   )
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/usr/include/opencv"
-  "/home/dorian/traffic_sign_ws/src/detection/include"
+  "/root/traffic_sign_ws/src/detection/include"
+  "/root/catkin_ws/src/cv_bridge/include"
   "/opt/ros/indigo/include"
-  "/home/dorian/dlib/dlib/.."
+  "/root/dlib/dlib/.."
   "/usr"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

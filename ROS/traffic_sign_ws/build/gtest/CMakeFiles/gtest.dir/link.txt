@@ -1,1 +1,1 @@
-/usr/bin/c++  -fPIC  -std=gnu++11 -Wreturn-type -O3 -DNDEBUG   -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/dorian/traffic_sign_ws/build/gtest/src -lpthread -Wl,-rpath,/home/dorian/traffic_sign_ws/build/gtest/src 
+/usr/bin/c++  -fPIC  -std=gnu++11 -Wreturn-type -O3 -DNDEBUG   -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/root/traffic_sign_ws/build/gtest/src -lpthread -Wl,-rpath,/root/traffic_sign_ws/build/gtest/src 

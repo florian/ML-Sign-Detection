@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dorian/traffic_sign_ws/src
+CMAKE_SOURCE_DIR = /root/traffic_sign_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dorian/traffic_sign_ws/build
+CMAKE_BINARY_DIR = /root/traffic_sign_ws/build
 
 # Include any dependencies generated for this target.
 include detection/CMakeFiles/detection.dir/depend.make
@@ -50,18 +50,18 @@ include detection/CMakeFiles/detection.dir/progress.make
 include detection/CMakeFiles/detection.dir/flags.make
 
 detection/CMakeFiles/detection.dir/src/detection.cpp.o: detection/CMakeFiles/detection.dir/flags.make
-detection/CMakeFiles/detection.dir/src/detection.cpp.o: /home/dorian/traffic_sign_ws/src/detection/src/detection.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/dorian/traffic_sign_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
+detection/CMakeFiles/detection.dir/src/detection.cpp.o: /root/traffic_sign_ws/src/detection/src/detection.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/traffic_sign_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object detection/CMakeFiles/detection.dir/src/detection.cpp.o"
-	cd /home/dorian/traffic_sign_ws/build/detection && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/detection.dir/src/detection.cpp.o -c /home/dorian/traffic_sign_ws/src/detection/src/detection.cpp
+	cd /root/traffic_sign_ws/build/detection && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/detection.dir/src/detection.cpp.o -c /root/traffic_sign_ws/src/detection/src/detection.cpp
 
 detection/CMakeFiles/detection.dir/src/detection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detection.dir/src/detection.cpp.i"
-	cd /home/dorian/traffic_sign_ws/build/detection && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/dorian/traffic_sign_ws/src/detection/src/detection.cpp > CMakeFiles/detection.dir/src/detection.cpp.i
+	cd /root/traffic_sign_ws/build/detection && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/traffic_sign_ws/src/detection/src/detection.cpp > CMakeFiles/detection.dir/src/detection.cpp.i
 
 detection/CMakeFiles/detection.dir/src/detection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detection.dir/src/detection.cpp.s"
-	cd /home/dorian/traffic_sign_ws/build/detection && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/dorian/traffic_sign_ws/src/detection/src/detection.cpp -o CMakeFiles/detection.dir/src/detection.cpp.s
+	cd /root/traffic_sign_ws/build/detection && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/traffic_sign_ws/src/detection/src/detection.cpp -o CMakeFiles/detection.dir/src/detection.cpp.s
 
 detection/CMakeFiles/detection.dir/src/detection.cpp.o.requires:
 .PHONY : detection/CMakeFiles/detection.dir/src/detection.cpp.o.requires
@@ -79,80 +79,77 @@ detection_OBJECTS = \
 # External object files for target detection
 detection_EXTERNAL_OBJECTS =
 
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: detection/CMakeFiles/detection.dir/src/detection.cpp.o
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: detection/CMakeFiles/detection.dir/build.make
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /home/dorian/traffic_sign_ws/devel/lib/libdlib.a
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/libcv_bridge.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.8
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.8
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.8
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/libimage_transport.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/libmessage_filters.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/libclass_loader.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/libPocoFoundation.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/libroscpp.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/librosconsole.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/librosconsole_log4cxx.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/librosconsole_backend_interface.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/liblog4cxx.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/libxmlrpcpp.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/libroslib.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/librospack.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/libroscpp_serialization.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/librostime.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/libcpp_common.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libnsl.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libSM.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libICE.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libX11.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libXext.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libpng.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libjpeg.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/libcblas.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/liblapack.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/x86_64-linux-gnu/libsqlite3.so
-/home/dorian/traffic_sign_ws/devel/lib/detection/detection: detection/CMakeFiles/detection.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /home/dorian/traffic_sign_ws/devel/lib/detection/detection"
-	cd /home/dorian/traffic_sign_ws/build/detection && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/detection.dir/link.txt --verbose=$(VERBOSE)
+/root/traffic_sign_ws/devel/lib/detection/detection: detection/CMakeFiles/detection.dir/src/detection.cpp.o
+/root/traffic_sign_ws/devel/lib/detection/detection: detection/CMakeFiles/detection.dir/build.make
+/root/traffic_sign_ws/devel/lib/detection/detection: /root/traffic_sign_ws/devel/lib/libdlib.a
+/root/traffic_sign_ws/devel/lib/detection/detection: /root/catkin_ws/devel/.private/cv_bridge/lib/libcv_bridge.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libopencv_videostab.so.2.4.8
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libopencv_video.so.2.4.8
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libopencv_superres.so.2.4.8
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libopencv_stitching.so.2.4.8
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libopencv_photo.so.2.4.8
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libopencv_ocl.so.2.4.8
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libopencv_objdetect.so.2.4.8
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libopencv_ml.so.2.4.8
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libopencv_legacy.so.2.4.8
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libopencv_imgproc.so.2.4.8
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libopencv_highgui.so.2.4.8
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libopencv_gpu.so.2.4.8
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libopencv_flann.so.2.4.8
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libopencv_features2d.so.2.4.8
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libopencv_core.so.2.4.8
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libopencv_contrib.so.2.4.8
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libopencv_calib3d.so.2.4.8
+/root/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/libimage_transport.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/libmessage_filters.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libtinyxml.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/libclass_loader.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/libPocoFoundation.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libdl.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/libroscpp.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libboost_signals.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libboost_filesystem.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/librosconsole.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/librosconsole_log4cxx.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/librosconsole_backend_interface.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/liblog4cxx.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libboost_regex.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/libxmlrpcpp.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/libroslib.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/libroscpp_serialization.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/librostime.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libboost_date_time.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /opt/ros/indigo/lib/libcpp_common.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libboost_system.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libboost_thread.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libpthread.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libconsole_bridge.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libnsl.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libSM.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libICE.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libX11.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libXext.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libpng.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libjpeg.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/libblas.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/liblapack.so
+/root/traffic_sign_ws/devel/lib/detection/detection: /usr/lib/arm-linux-gnueabihf/libsqlite3.so
+/root/traffic_sign_ws/devel/lib/detection/detection: detection/CMakeFiles/detection.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable /root/traffic_sign_ws/devel/lib/detection/detection"
+	cd /root/traffic_sign_ws/build/detection && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/detection.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-detection/CMakeFiles/detection.dir/build: /home/dorian/traffic_sign_ws/devel/lib/detection/detection
+detection/CMakeFiles/detection.dir/build: /root/traffic_sign_ws/devel/lib/detection/detection
 .PHONY : detection/CMakeFiles/detection.dir/build
 
 detection/CMakeFiles/detection.dir/requires: detection/CMakeFiles/detection.dir/src/detection.cpp.o.requires
 .PHONY : detection/CMakeFiles/detection.dir/requires
 
 detection/CMakeFiles/detection.dir/clean:
-	cd /home/dorian/traffic_sign_ws/build/detection && $(CMAKE_COMMAND) -P CMakeFiles/detection.dir/cmake_clean.cmake
+	cd /root/traffic_sign_ws/build/detection && $(CMAKE_COMMAND) -P CMakeFiles/detection.dir/cmake_clean.cmake
 .PHONY : detection/CMakeFiles/detection.dir/clean
 
 detection/CMakeFiles/detection.dir/depend:
-	cd /home/dorian/traffic_sign_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dorian/traffic_sign_ws/src /home/dorian/traffic_sign_ws/src/detection /home/dorian/traffic_sign_ws/build /home/dorian/traffic_sign_ws/build/detection /home/dorian/traffic_sign_ws/build/detection/CMakeFiles/detection.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/traffic_sign_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/traffic_sign_ws/src /root/traffic_sign_ws/src/detection /root/traffic_sign_ws/build /root/traffic_sign_ws/build/detection /root/traffic_sign_ws/build/detection/CMakeFiles/detection.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : detection/CMakeFiles/detection.dir/depend
 

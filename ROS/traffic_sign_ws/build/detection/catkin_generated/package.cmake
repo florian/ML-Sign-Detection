@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "detection")
 set(detection_VERSION "0.0.0")
-set(detection_MAINTAINER "dorian <dorian@todo.todo>")
+set(detection_MAINTAINER "root <root@todo.todo>")
 set(detection_PACKAGE_FORMAT "1")
 set(detection_BUILD_DEPENDS "cv_bridge" "image_transport" "opencv2")
 set(detection_BUILD_EXPORT_DEPENDS "cv_bridge" "image_transport" "opencv2")

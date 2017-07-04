@@ -1,8 +1,8 @@
-# Install script for directory: /home/dorian/traffic_sign_ws/src/detection
+# Install script for directory: /root/traffic_sign_ws/src/detection
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/dorian/traffic_sign_ws/install")
+  SET(CMAKE_INSTALL_PREFIX "/root/traffic_sign_ws/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,23 +33,23 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dorian/traffic_sign_ws/build/detection/catkin_generated/installspace/detection.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/root/traffic_sign_ws/build/detection/catkin_generated/installspace/detection.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection/cmake" TYPE FILE FILES
-    "/home/dorian/traffic_sign_ws/build/detection/catkin_generated/installspace/detectionConfig.cmake"
-    "/home/dorian/traffic_sign_ws/build/detection/catkin_generated/installspace/detectionConfig-version.cmake"
+    "/root/traffic_sign_ws/build/detection/catkin_generated/installspace/detectionConfig.cmake"
+    "/root/traffic_sign_ws/build/detection/catkin_generated/installspace/detectionConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection" TYPE FILE FILES "/home/dorian/traffic_sign_ws/src/detection/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection" TYPE FILE FILES "/root/traffic_sign_ws/src/detection/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/dorian/traffic_sign_ws/build/detection/dlib_build/cmake_install.cmake")
+  INCLUDE("/root/traffic_sign_ws/build/detection/dlib_build/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

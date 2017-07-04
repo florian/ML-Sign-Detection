@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/dorian/traffic_sign_ws/src
-# Build directory: /home/dorian/traffic_sign_ws/build
+# Source directory: /root/traffic_sign_ws/src
+# Build directory: /root/traffic_sign_ws/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

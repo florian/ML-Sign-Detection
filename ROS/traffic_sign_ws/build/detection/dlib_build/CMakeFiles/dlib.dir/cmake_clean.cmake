@@ -53,8 +53,8 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/dlib.dir/image_saver/save_png.cpp.o"
   "CMakeFiles/dlib.dir/image_loader/jpeg_loader.cpp.o"
   "CMakeFiles/dlib.dir/image_saver/save_jpeg.cpp.o"
-  "/home/dorian/traffic_sign_ws/devel/lib/libdlib.pdb"
-  "/home/dorian/traffic_sign_ws/devel/lib/libdlib.a"
+  "/root/traffic_sign_ws/devel/lib/libdlib.pdb"
+  "/root/traffic_sign_ws/devel/lib/libdlib.a"
 )
 
 # Per-language clean rules from dependency scanning.

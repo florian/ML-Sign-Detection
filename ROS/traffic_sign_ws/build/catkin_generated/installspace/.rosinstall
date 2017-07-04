@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/dorian/traffic_sign_ws/install/setup.sh
+    local-name: /root/traffic_sign_ws/install/setup.sh

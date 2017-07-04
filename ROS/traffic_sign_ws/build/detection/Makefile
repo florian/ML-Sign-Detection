@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dorian/traffic_sign_ws/src
+CMAKE_SOURCE_DIR = /root/traffic_sign_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dorian/traffic_sign_ws/build
+CMAKE_BINARY_DIR = /root/traffic_sign_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -120,14 +120,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/dorian/traffic_sign_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dorian/traffic_sign_ws/build/CMakeFiles /home/dorian/traffic_sign_ws/build/detection/CMakeFiles/progress.marks
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dorian/traffic_sign_ws/build/CMakeFiles 0
+	cd /root/traffic_sign_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /root/traffic_sign_ws/build/CMakeFiles /root/traffic_sign_ws/build/detection/CMakeFiles/progress.marks
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/traffic_sign_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/clean
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/clean
 .PHONY : clean
 
 # The main clean target
@@ -136,22 +136,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/preinstall
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/preinstall
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dorian/traffic_sign_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/traffic_sign_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 detection/CMakeFiles/detection.dir/rule:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/detection.dir/rule
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/detection.dir/rule
 .PHONY : detection/CMakeFiles/detection.dir/rule
 
 # Convenience name for target.
@@ -160,12 +160,12 @@ detection: detection/CMakeFiles/detection.dir/rule
 
 # fast build rule for target.
 detection/fast:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/detection.dir/build.make detection/CMakeFiles/detection.dir/build
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/detection.dir/build.make detection/CMakeFiles/detection.dir/build
 .PHONY : detection/fast
 
 # Convenience name for target.
 detection/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : detection/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -174,12 +174,12 @@ geometry_msgs_generate_messages_cpp: detection/CMakeFiles/geometry_msgs_generate
 
 # fast build rule for target.
 geometry_msgs_generate_messages_cpp/fast:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make detection/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make detection/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 detection/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 .PHONY : detection/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -188,12 +188,12 @@ geometry_msgs_generate_messages_lisp: detection/CMakeFiles/geometry_msgs_generat
 
 # fast build rule for target.
 geometry_msgs_generate_messages_lisp/fast:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make detection/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make detection/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 detection/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 .PHONY : detection/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -202,12 +202,26 @@ geometry_msgs_generate_messages_py: detection/CMakeFiles/geometry_msgs_generate_
 
 # fast build rule for target.
 geometry_msgs_generate_messages_py/fast:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make detection/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make detection/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+detection/CMakeFiles/pub.dir/rule:
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/pub.dir/rule
+.PHONY : detection/CMakeFiles/pub.dir/rule
+
+# Convenience name for target.
+pub: detection/CMakeFiles/pub.dir/rule
+.PHONY : pub
+
+# fast build rule for target.
+pub/fast:
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/pub.dir/build.make detection/CMakeFiles/pub.dir/build
+.PHONY : pub/fast
+
+# Convenience name for target.
 detection/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : detection/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -216,12 +230,12 @@ roscpp_generate_messages_cpp: detection/CMakeFiles/roscpp_generate_messages_cpp.
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make detection/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make detection/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
 detection/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : detection/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -230,12 +244,12 @@ roscpp_generate_messages_lisp: detection/CMakeFiles/roscpp_generate_messages_lis
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make detection/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make detection/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
 detection/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/roscpp_generate_messages_py.dir/rule
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : detection/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -244,12 +258,12 @@ roscpp_generate_messages_py: detection/CMakeFiles/roscpp_generate_messages_py.di
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/roscpp_generate_messages_py.dir/build.make detection/CMakeFiles/roscpp_generate_messages_py.dir/build
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/roscpp_generate_messages_py.dir/build.make detection/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
 detection/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : detection/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -258,12 +272,12 @@ rosgraph_msgs_generate_messages_cpp: detection/CMakeFiles/rosgraph_msgs_generate
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make detection/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make detection/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 detection/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : detection/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -272,12 +286,12 @@ rosgraph_msgs_generate_messages_lisp: detection/CMakeFiles/rosgraph_msgs_generat
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make detection/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make detection/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 detection/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : detection/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -286,12 +300,12 @@ rosgraph_msgs_generate_messages_py: detection/CMakeFiles/rosgraph_msgs_generate_
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make detection/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make detection/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 detection/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 .PHONY : detection/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -300,12 +314,12 @@ sensor_msgs_generate_messages_cpp: detection/CMakeFiles/sensor_msgs_generate_mes
 
 # fast build rule for target.
 sensor_msgs_generate_messages_cpp/fast:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make detection/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make detection/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 detection/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 .PHONY : detection/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -314,12 +328,12 @@ sensor_msgs_generate_messages_lisp: detection/CMakeFiles/sensor_msgs_generate_me
 
 # fast build rule for target.
 sensor_msgs_generate_messages_lisp/fast:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make detection/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make detection/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 detection/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 .PHONY : detection/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -328,12 +342,12 @@ sensor_msgs_generate_messages_py: detection/CMakeFiles/sensor_msgs_generate_mess
 
 # fast build rule for target.
 sensor_msgs_generate_messages_py/fast:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make detection/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make detection/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 detection/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : detection/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -342,12 +356,12 @@ std_msgs_generate_messages_cpp: detection/CMakeFiles/std_msgs_generate_messages_
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make detection/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make detection/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 detection/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : detection/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -356,12 +370,12 @@ std_msgs_generate_messages_lisp: detection/CMakeFiles/std_msgs_generate_messages
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make detection/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make detection/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 detection/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+	cd /root/traffic_sign_ws/build && $(MAKE) -f CMakeFiles/Makefile2 detection/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : detection/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -370,7 +384,7 @@ std_msgs_generate_messages_py: detection/CMakeFiles/std_msgs_generate_messages_p
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/std_msgs_generate_messages_py.dir/build.make detection/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/std_msgs_generate_messages_py.dir/build.make detection/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 src/detection.o: src/detection.cpp.o
@@ -378,7 +392,7 @@ src/detection.o: src/detection.cpp.o
 
 # target to build an object file
 src/detection.cpp.o:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/detection.dir/build.make detection/CMakeFiles/detection.dir/src/detection.cpp.o
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/detection.dir/build.make detection/CMakeFiles/detection.dir/src/detection.cpp.o
 .PHONY : src/detection.cpp.o
 
 src/detection.i: src/detection.cpp.i
@@ -386,7 +400,7 @@ src/detection.i: src/detection.cpp.i
 
 # target to preprocess a source file
 src/detection.cpp.i:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/detection.dir/build.make detection/CMakeFiles/detection.dir/src/detection.cpp.i
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/detection.dir/build.make detection/CMakeFiles/detection.dir/src/detection.cpp.i
 .PHONY : src/detection.cpp.i
 
 src/detection.s: src/detection.cpp.s
@@ -394,8 +408,32 @@ src/detection.s: src/detection.cpp.s
 
 # target to generate assembly for a file
 src/detection.cpp.s:
-	cd /home/dorian/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/detection.dir/build.make detection/CMakeFiles/detection.dir/src/detection.cpp.s
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/detection.dir/build.make detection/CMakeFiles/detection.dir/src/detection.cpp.s
 .PHONY : src/detection.cpp.s
+
+src/pub.o: src/pub.cpp.o
+.PHONY : src/pub.o
+
+# target to build an object file
+src/pub.cpp.o:
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/pub.dir/build.make detection/CMakeFiles/pub.dir/src/pub.cpp.o
+.PHONY : src/pub.cpp.o
+
+src/pub.i: src/pub.cpp.i
+.PHONY : src/pub.i
+
+# target to preprocess a source file
+src/pub.cpp.i:
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/pub.dir/build.make detection/CMakeFiles/pub.dir/src/pub.cpp.i
+.PHONY : src/pub.cpp.i
+
+src/pub.s: src/pub.cpp.s
+.PHONY : src/pub.s
+
+# target to generate assembly for a file
+src/pub.cpp.s:
+	cd /root/traffic_sign_ws/build && $(MAKE) -f detection/CMakeFiles/pub.dir/build.make detection/CMakeFiles/pub.dir/src/pub.cpp.s
+.PHONY : src/pub.cpp.s
 
 # Help Target
 help:
@@ -412,6 +450,7 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... pub"
 	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
@@ -429,6 +468,9 @@ help:
 	@echo "... src/detection.o"
 	@echo "... src/detection.i"
 	@echo "... src/detection.s"
+	@echo "... src/pub.o"
+	@echo "... src/pub.i"
+	@echo "... src/pub.s"
 .PHONY : help
 
 
@@ -440,6 +482,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dorian/traffic_sign_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/traffic_sign_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

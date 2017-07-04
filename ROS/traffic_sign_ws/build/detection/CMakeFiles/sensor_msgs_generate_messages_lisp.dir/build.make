@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dorian/traffic_sign_ws/src
+CMAKE_SOURCE_DIR = /root/traffic_sign_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dorian/traffic_sign_ws/build
+CMAKE_BINARY_DIR = /root/traffic_sign_ws/build
 
 # Utility rule file for sensor_msgs_generate_messages_lisp.
 
@@ -56,10 +56,10 @@ detection/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build: sensor_msgs_g
 .PHONY : detection/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 
 detection/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
-	cd /home/dorian/traffic_sign_ws/build/detection && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /root/traffic_sign_ws/build/detection && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : detection/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 
 detection/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend:
-	cd /home/dorian/traffic_sign_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dorian/traffic_sign_ws/src /home/dorian/traffic_sign_ws/src/detection /home/dorian/traffic_sign_ws/build /home/dorian/traffic_sign_ws/build/detection /home/dorian/traffic_sign_ws/build/detection/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/traffic_sign_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/traffic_sign_ws/src /root/traffic_sign_ws/src/detection /root/traffic_sign_ws/build /root/traffic_sign_ws/build/detection /root/traffic_sign_ws/build/detection/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : detection/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
 
