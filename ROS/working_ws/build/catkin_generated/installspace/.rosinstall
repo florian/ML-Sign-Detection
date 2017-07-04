@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /root/traffic_sign_ws/install/setup.sh
