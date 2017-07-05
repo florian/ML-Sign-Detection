@@ -1,2 +1,0 @@
-detection
--DCATKIN_DEVEL_PREFIX=/root/traffic_sign_ws/devel -DCMAKE_INSTALL_PREFIX=/root/traffic_sign_ws/install -G Unix Makefiles
