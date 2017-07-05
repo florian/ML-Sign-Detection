@@ -7,9 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/dorian/traffic_sign_ws/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/dorian/traffic_sign_ws/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/dorian/traffic_sign_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD="/home/dorian/traffic_sign_ws/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/dorian/traffic_sign_ws/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/dorian/traffic_sign_ws/src:$ROS_PACKAGE_PATH"
+export PWD="/root/traffic_sign_ws/build"
